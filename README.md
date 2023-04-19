@@ -1,15 +1,21 @@
-# SISTEM PAKAR - TUGAS BESAR
+# SISTEM PAKAR - TUGAS BESAR - DIAGNOSA PENYAKIT GIGI
 ## _Universitas Logistik & Bisnis_
 
 - [1204053](https://github.com/resa23) - Resa Rianti
 - [1204041](https://github.com/BryanFlava) - Bryan Samperura
 - [1204037](https://github.com/safwansheamus) - Muhammad Safwan Suhadi
 
+## Next Plan
+- Pembuatan Algoritma Sistem
+- Pembuatan Dataset Dummy Min. 100, Max. 500 (Manual using Excell)
+
 ## Features & Aplikasi WEB
 
 - Landing Page
 - Login Register
 - Dashboard
+- Laporan
+- User Page
 - Machine Learning
 
 ## Tech
@@ -25,16 +31,6 @@
 
 ## Installation
 
-Dalam membuka aplikasi ini ada beberapa tahap yaitu :
-
-```sh
-pip install --upgrade django
-pip mysqlclient
-activate
-cd ../..
-cd ksi-django-app
-py manage.py runserver
-```
 
 ## License
 
