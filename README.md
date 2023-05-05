@@ -7,6 +7,7 @@
 
 ## On Going
 - Prototype
+- Pembuatan HTML (Landing Page)
 
 ## Next Plan
 - Pembuatan Algoritma Sistem
