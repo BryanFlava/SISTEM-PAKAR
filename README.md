@@ -5,6 +5,9 @@
 - [1204041](https://github.com/BryanFlava) - Bryan Samperura
 - [1204037](https://github.com/safwansheamus) - Muhammad Safwan Suhadi
 
+## On Going
+- Prototype
+
 ## Next Plan
 - Pembuatan Algoritma Sistem
 - Pembuatan Dataset Dummy Min. 100, Max. 500 (Manual using Excell)
