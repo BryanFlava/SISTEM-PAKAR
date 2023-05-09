@@ -6,8 +6,10 @@
 - [1204037](https://github.com/safwansheamus) - Muhammad Safwan Suhadi
 
 ## On Going
-- Prototype
-- Pembuatan HTML (Landing Page)
+- Prototype (Done)
+- Pembuatan HTML (On Proggres)
+- FEnd n BEnd (On Proggres)
+- Review Jurnal (On Proggress)
 
 ## Next Plan
 - Pembuatan Algoritma Sistem
@@ -32,7 +34,10 @@
 - [CSS](https://www.w3schools.com/css/) - Mempercantik UI/UX dari aplikasi WEB ini.
 - [Jupyter](https://jupyter.org/) - Notebook editor dalam pembuatan Machine Learning.
 
-
+## Jurnal Reference
+- https://j-ptiik.ub.ac.id/index.php/j-ptiik/article/view/967 
+- http://eprints.ums.ac.id/65708/3/NASKAH%20PUBLIKASI.pdf
+- https://ejournal.unida.gontor.ac.id/index.php/FIJ/article/view/3019
 ## Installation
 
 
