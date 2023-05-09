@@ -2,7 +2,7 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f5f5f5;
-  line-height: 1.6;
+  line-height: 0.6;
   margin: 0;
 }
 
@@ -15,18 +15,22 @@ header {
 
 /* CSS untuk navigasi */
 nav {
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: slide-in 1s ease-out;
 }
 
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  align-items: center;
 }
 
 nav li {
-  display: inline-block;
-  margin-left: 20px;
+  margin-left: 15px;
 }
 
 nav a {
@@ -40,6 +44,34 @@ nav a:hover {
   color: #333;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  border-radius: 50px;
+}
+.navbtn {
+    display: inline-block;
+    background-color: #00aeff;
+    color: #fff;
+    padding: 15px 25px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+.navbtn:hover {
+    background-color: #057ccb;
+}
+.navclr {
+  color: #fff;
+  font-size: 15px;
+}
+
+
 /* CSS untuk section */
 section {
   background-color: #fff;
@@ -47,63 +79,74 @@ section {
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.05);
   margin: 20px 0;
   padding: 50px;
-}
-
-section h2 {
+  }
+  
+  
+  section h2 {
   color: #333;
   font-size: 28px;
   margin-top: 0;
-}
 
-section p {
+  }
+  
+  section p {
   color: #555;
   font-size: 18px;
   line-height: 1.6;
-}
 
-section ul {
+  }
+  
+  section ul {
   list-style: none;
   margin: 0;
   padding: 0;
-}
 
-section li {
-  margin-bottom: 10px;
-}
+  }
+  
+  section li {
+  margin-bottom: 20px;
+  }
 
 
 .about {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
 }
 
 .about h2 {
   text-align: left;
   font-size: 30px;
   margin-right: 50px;
+  line-height: 1.5;
 }
 
 .about p {
-  font-size: 18px;
-  line-height: 1.6;
+  font-size: 20px;
+  line-height: 1.5;
 }
 
 .about-image {
-  margin-left: 160px;
+  margin-left: 150px;
+
 }
 
 .about-image img {
-  max-width: 100%;
+  width: 100%;
   border-radius: 10px;
+
 }
 
 .button {
     display: inline-block;
     background-color: #00aeff;
     color: #fff;
-    padding: 10px 20px;
+    padding: 20px 40px;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
     margin-top: 20px;
@@ -113,13 +156,11 @@ section li {
 .button:hover {
   background-color: #057ccb;
 }
-
-
 /* CSS untuk footer */
 footer {
   background-color: #333;
   color: #fff;
-  padding: 40px 0;
+  padding: 42px 0;
 }
 
 .footer-bottom {
