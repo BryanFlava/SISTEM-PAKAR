@@ -24,6 +24,9 @@
 - User Page
 - Machine Learning
 
+## Prototype
+- Progress
+
 ## Tech
 
 - [Python](https://www.python.org/) - Dasar WEB ini menggunkaan Python.
