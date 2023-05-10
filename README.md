@@ -25,7 +25,7 @@
 - Machine Learning
 
 ## Prototype
-- Progress
+- [Prototype Figma](https://www.figma.com/file/ow4g0FuBawbhenMcgLNJOd/SISTEM-PAKAR-team-library?type=design&node-id=1015%3A3&t=VbwGYovhgbumgVTy-1) - Contoh APK yang akan dibangun
 
 ## Tech
 
@@ -41,6 +41,7 @@
 - https://j-ptiik.ub.ac.id/index.php/j-ptiik/article/view/967 
 - http://eprints.ums.ac.id/65708/3/NASKAH%20PUBLIKASI.pdf
 - https://ejournal.unida.gontor.ac.id/index.php/FIJ/article/view/3019
+
 ## Installation
 
 

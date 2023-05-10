@@ -8,7 +8,7 @@ body {
 
 /* CSS untuk header */
 header {
-  background-color: #fff;
+  background-color: #29293D;
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
   padding: 20px;
 }
@@ -34,14 +34,14 @@ nav li {
 }
 
 nav a {
-  color: #ababab;
+  color: #7c7c89;
   font-size: 18px;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
 }
 
 nav a:hover {
-  color: #333;
+  color: #D1D1E0;
 }
 
 .logo {
@@ -53,24 +53,26 @@ nav a:hover {
   width: 50px;
   border-radius: 50px;
 }
+
 .navbtn {
-    display: inline-block;
-    background-color: #00aeff;
-    color: #fff;
-    padding: 15px 25px;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
-    margin-top: 10px;
-    border-radius: 5px;
+  display: inline-block;
+  background-color: #E60000;
+  color: #fff;
+  padding: 15px 25px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  margin-top: 10px;
+  border-radius: 5px;
 }
+
 .navbtn:hover {
-    background-color: #057ccb;
+  background-color: #a10909;
 }
+
 .navclr {
   color: #fff;
   font-size: 15px;
 }
-
 
 /* CSS untuk section */
 section {
@@ -79,34 +81,29 @@ section {
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.05);
   margin: 20px 0;
   padding: 50px;
-  }
-  
-  
-  section h2 {
+}
+
+section h2 {
   color: #333;
   font-size: 28px;
   margin-top: 0;
+}
 
-  }
-  
-  section p {
+section p {
   color: #555;
   font-size: 18px;
   line-height: 1.6;
+}
 
-  }
-  
-  section ul {
+section ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
 
-  }
-  
-  section li {
+section li {
   margin-bottom: 20px;
-  }
-
+}
 
 .about {
   display: flex;
@@ -133,24 +130,22 @@ section {
 
 .about-image {
   margin-left: 150px;
-
 }
 
 .about-image img {
   width: 100%;
   border-radius: 10px;
-
 }
 
 .button {
     display: inline-block;
-    background-color: #00aeff;
+    background-color: #458FF6;
     color: #fff;
-    padding: 20px 40px;
+    padding: 15px 10px;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
     margin-top: 20px;
-    border-radius: 5px;
+    border-radius: 25px;
 }
 
 .button:hover {
@@ -158,7 +153,7 @@ section {
 }
 /* CSS untuk footer */
 footer {
-  background-color: #333;
+  background-color: #29293D;
   color: #fff;
   padding: 42px 0;
 }
@@ -166,4 +161,78 @@ footer {
 .footer-bottom {
   text-align: center;
   margin-top: 20px;
+}
+
+/* Media queries untuk perangkat mobile */
+@media screen and (max-width: 768px) {
+  /* Mengatur tata letak navigasi */
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  nav ul {
+    margin-top: 10px;
+  }
+  
+  nav li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+  
+  /* Mengatur ukuran logo */
+  .logo img {
+    width: 40px;
+  }
+  
+  /* Mengatur ukuran teks di header */
+  nav a {
+    font-size: 16px;
+  }
+  
+  .navbtn {
+    padding: 10px 20px;
+    margin-top: 0;
+  }
+  
+  /* Mengatur tata letak tentang section */
+  .about {
+    flex-direction: column;
+  }
+  
+  .about h2 {
+    font-size: 24px;
+    margin-right: 0;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .about-image {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+/* Media queries untuk perangkat dengan lebar layar yang sangat kecil */
+@media screen and (max-width: 480px) {
+  /* Mengatur padding pada section */
+  section {
+    padding: 30px;
+  }
+  
+  section h2 {
+    font-size: 24px;
+  }
+  
+  section p {
+    font-size: 16px;
+  }
+  
+  .about h2 {
+    font-size: 20px;
+  }
+  
+  .about p {
+    font-size: 16px;
+  }
 }
