@@ -17,8 +17,8 @@
 
 ## Features & Aplikasi WEB
 
-- Landing Page
-- Login Register
+- Landing Page (DONE (On Progress On Django))
+- Login Register (DONE (On Progress On Django))
 - Dashboard
 - Laporan
 - User Page
