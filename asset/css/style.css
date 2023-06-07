@@ -129,11 +129,11 @@ section li {
 }
 
 .about-image {
-  margin-left: 150px;
+  margin-left: 350px;
 }
 
 .about-image img {
-  width: 100%;
+  width: 90%;
   border-radius: 10px;
 }
 
