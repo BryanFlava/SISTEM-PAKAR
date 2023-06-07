@@ -138,14 +138,14 @@ section li {
 }
 
 .button {
-    display: inline-block;
-    background-color: #458FF6;
-    color: #fff;
-    padding: 15px 10px;
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
-    margin-top: 20px;
-    border-radius: 25px;
+  display: inline-block;
+  background-color: #458FF6;
+  color: #fff;
+  padding: 15px 10px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  margin-top: 20px;
+  border-radius: 25px;
 }
 
 .button:hover {
@@ -201,6 +201,7 @@ section li {
   font-size: 15px;
   margin-bottom: 20px;
 }
+
 .form-group {
   margin-bottom: 20px;
 }
@@ -240,6 +241,26 @@ button:hover {
   background-color: #057ccb;
 }
 
+/* CSS untuk dashboard */
+.button2 {
+  display: block;
+  width: 180px;
+  background-color: #458FF6;
+  color: #fff;
+  padding: 15px 10px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  margin-top: 20px;
+  border-radius: 25px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button2:hover {
+  background-color: #057ccb;
+}
+
 /* CSS untuk footer */
 footer {
   background-color: #29293D;
@@ -254,48 +275,49 @@ footer {
 
 /* Media queries untuk perangkat mobile */
 @media screen and (max-width: 768px) {
+
   /* Mengatur tata letak navigasi */
   nav {
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   nav ul {
     margin-top: 10px;
   }
-  
+
   nav li {
     margin-left: 0;
     margin-bottom: 10px;
   }
-  
+
   /* Mengatur ukuran logo */
   .logo img {
     width: 40px;
   }
-  
+
   /* Mengatur ukuran teks di header */
   nav a {
     font-size: 16px;
   }
-  
+
   .navbtn {
     padding: 10px 20px;
     margin-top: 0;
   }
-  
+
   /* Mengatur tata letak tentang section */
   .about {
     flex-direction: column;
   }
-  
+
   .about h2 {
     font-size: 24px;
     margin-right: 0;
     margin-bottom: 10px;
     text-align: center;
   }
-  
+
   .about-image {
     margin-left: 0;
     margin-top: 20px;
@@ -304,24 +326,111 @@ footer {
 
 /* Media queries untuk perangkat dengan lebar layar yang sangat kecil */
 @media screen and (max-width: 480px) {
+
   /* Mengatur padding pada section */
   section {
     padding: 30px;
   }
-  
+
   section h2 {
     font-size: 24px;
   }
-  
+
   section p {
     font-size: 16px;
   }
-  
+
   .about h2 {
     font-size: 20px;
   }
-  
+
   .about p {
     font-size: 16px;
   }
+
+  /* CSS untuk section diagnosa */
+  .register-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+  }
+
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 300px;
+  }
+
+  .card h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .card p {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .card a {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="text"],
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  button {
+    display: block;
+    width: 100%;
+    background-color: #458FF6;
+    color: #fff;
+    padding: 15px 10px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    margin-top: 20px;
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #057ccb;
+  }
+
+  hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #ccc;
+  }
+
+
 }
