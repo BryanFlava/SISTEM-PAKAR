@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block title %} Home Page {% endblock title%}
+{% block content %}
+{% load static %}
+    <div class="jumbotron jumbotron-fluid" style="background-color: #ffffff">
+        <center>
+            <br>
+            <br>
+        <img src="{% static "img/dentist.jpg" %}" alt="" style="display:block; width:500px;height:300px; ">
+        </center>
+        <h3 class="display-3"> Virtual healthcare for your teeth</h3>
+        <p class="lead">
+            Cek kesehatan gigimu dari sekarang !
+        </p>
+        <hr class="my-4">
+        <p class="lead">
+            <center>
+                <a class="btn-primary btn-lg" href="{% url 'login' %}" role="button" style="background-color: #3d85c6" >Get Started !</a>  
+            </center>
+        </p>
+    
+    </div>
+
+{% endblock content %}

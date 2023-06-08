@@ -1,0 +1,171 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} Frontend {% endblock title %}</title>
+    <!-- Bootstrap5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- FontAwsome -->
+    <link href="{% static 'fontawesomefree/css/all.min.css' %}" rel="stylesheet" 
+    type="text/css">
+    <!-- Favicon -->
+    {% comment %} <link href={% static "img/favicon.ico" %} rel="shortcut icon">
+    <!-- Icon Tabs -->
+    <link href={% static "img/logo.ico" %} rel="shortcut icon"> {% endcomment %}
+    <!-- Static CSS -->
+    <link href={% static "css/style.css" %} rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <style media="screen">
+      body {
+        margin: 0;
+        font-family: var(--bs-font-sans-serif);
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        background-color: #ffffff;
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+        margin: 0;
+        overflow: auto;
+        color: #212529;
+        background-color: #ffffff;
+    }
+
+body {
+        margin: 0;
+        font-family: var(--bs-font-sans-serif);
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        background-color: #ffffff;
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: transparent;
+        overflow: auto;
+    }
+    
+    #navbar {
+      background-color: #333;
+      position: fixed;
+      top: -50px;
+      width: 100%;
+      display: block;
+      transition: top 0.3s;
+    }
+    
+    #navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 15px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+    
+    #navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    </style>
+
+    <!-- JS bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <!-- JS kita -->
+    <script src="script.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js"></script>
+
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+    <!-- ======= header ======= -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light"  style="background-color: #140446" id="demo1Navbar">
+        <div class="container-fluid" >
+          <a class="navbar-brand" href="#"><i class="fa-duotone fa-ribbon"></i></a>
+          {% comment %} <i class="fa-light fa-ribbon"></i> {% endcomment %}
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item" >
+                <a class="nav-link {% if navbar == 'home' %} active {% endif %}" href="{% url 'home'%}" style="color:#ffffff">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link{% if navbar == 'login' %} active {% endif %}" href="{% url 'login'%}" style="color:#ffffff">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link{% if navbar == 'predict' %} active {% endif %}" href="{% url 'predict'%}" style="color:#ffffff">Predict</a>
+              </li>
+             
+              <li class="nav-item">
+                <a class="nav-link{% if navbar == 'view' %} active {% endif %}" href="http://127.0.0.1:8000/view/" style="color:#ffffff"> Data </a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link{% if navbar == 'report' %} active {% endif %}" href="http://127.0.0.1:8000/report/" style="color:#ffffff"> Report </a>
+              </li>
+            
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'logout'%}" style="color:#ffffff">Logout</a>
+              </li>
+      
+
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+        <div class="container">
+        
+        </div>
+<!-- ============================================== Content Page Here ============================================== -->
+<!-- Block content from other pages denied here -->
+{% block content %} {% endblock content %}
+<!-- ============================================= END // Content Page ============================================= -->
+
+</div> <!-- End // Wrapper -->
+
+<!-- ======= Footer ======= -->
+<footer class="bg-light text-center text-lg-start" id="footer" style="color:#ffffff;">
+    <div class="text-center p-3" style="background-color: #140446">
+      Diagnosa Penyakit Gigi dan Mulut
+        <a class="text-light" href="#" style="text-decoration: none;">
+            <span {% block footer %} class="text-info" {% endblock footer %}></span>
+        </a>
+    </div>
+</footer>
+
+<!-- ======= JAVASCRIPT SECTION ======= -->
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!-- Jquery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<!-- Static JS -->
+<script src={% static "js/script.js" %}></script>
+<script src="navonscroll.js"></script>
+        <!-- Function Call --> 
+<script>
+          hide_on_scroll({
+            nav_id : 'demo1Navbar'
+          });
+</script>
+
+</body>
+</html>

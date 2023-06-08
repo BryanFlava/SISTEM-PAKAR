@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<br>
+<br>
+<br>
+<center>
+  <div class="card text-dark bg-light mb-5" style="max-width: 25rem;">
+      <div class="card-header ">
+        Hasil Prediksi Anda Sebagai Berikut :
+      </div>
+      <div class="card-body">
+        {% if result == 0 %}
+        <h5 style="color : rgb(12, 90, 12)"> Tidak Terdeteksi Penyakit Jantung</h5>
+        {% elif result == 1 %}
+        <h5 style="color : #cd5c5c "> Terdeteksi Penyakit Jantung</h5>
+        {% endif %}
+        <p class="card-text"></p>
+        <br>
+        <br>
+        <p class="lead">
+          <center>
+              <a class="btn-primary btn-lg" href="{% url 'predict' %}" role="button" style="background-color: #fe7ba7" > Let's Predict Again ? </a>
+          </center>
+          </p>
+
+      </div>
+    </div>
+  </center>
+
+{% endblock content %}

@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+
+<!-- Page content -->
+{% block content %}
+<h1 class="container text-info" id="view" ></h1>
+
+{% load static %} 
+
+<div class="jumbotron">
+  <center>
+  <h4 > List Cancer Datas</h4>
+  <p class="lead"> 
+  </p>
+</center>
+  <hr class="my-4">
+</div>
+<div class="container-fluid">
+
+  <!-- Page Heading -->
+  <div class="card shadow mb-4">
+      <div class="card-header py-3">
+          <p class="lead">
+            <a class="btn-primary btn-lg" href="http://127.0.0.1:8000/knkr" role="button" style="background-color: #fe7ba7" >[+] Tambah Data</a>
+          </p>
+      </div>
+      <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <thead>
+                    <tr>
+                      <th scope="col">No</th> 
+                      <th scope="col">Umur</th>
+                      <th scope="col">Jenis Kelamin</th>
+                      <th scope="col">Rerata Luas Lobus</th>
+                      <th scope="col">Rerata Luas Permukaan tumor</th>
+                      <th scope="col">Rerata Cekungan Kontur</th>
+                      <th scope="col">Rerata Jumlah Cekungan Kontur</th>
+                      <th scope="col">SE Jari2 Lobus</th>
+                      <th scope="col">SE Tekstur Permukaan</th>
+                      <th scope="col">SE Tumor Inti</th>
+                      <th scope="col">SE Luas Permukaan</th>
+                      <th scope="col">SE Cekungan Kontur</th>
+                      <th scope="col">SE Jumlah Cekungan Kontur</th>
+                      <th scope="col">SE Fraktal Spesimen</th>
+                      <th scope="col">Keparahan Jari2 Lobus</th>
+                      <th scope="col">Keparahan Tekstur Permukaan</th>
+                      <th scope="col">Keparahan Tumor Inti</th>
+                      <th scope="col">Keparahan Luas Lobus</th>
+                      <th scope="col">Keparahan Luas Permukaan Tumor</th>
+                      <th scope="col">Keparahan Cekungan Kontur</th>
+                      <th scope="col">Keparahan Jumlah Cekungan Kontur</th>
+                      <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                  {% for kanker in kanker %}
+                    <tr>
+                      <th scope="row">{{ kanker.id }}</th>
+                      <td>{{ kanker.rerata_jari2_lobus }}</td>
+                      <td>{{ kanker.rerata_tumor_inti }}</td>
+                      <td>{{ kanker.rerata_luas_lobus }}</td>
+                      <td>{{ kanker.rerata_luas_permukaan_tumor }}</td>
+                      <td>{{ kanker.rerata_cekungan_kontur }}</td>
+                      <td>{{ kanker.rerata_jumlah_cekungan_kontur }}</td>
+                      <td>{{ kanker.se_jari2_lobus }}</td>
+                      <td>{{ kanker.se_tekstur_permukaan }}</td>
+                      <td>{{ kanker.se_tumor_inti }}</td>
+                      <td>{{ kanker.se_luas_permukaan_tumor }}</td>
+                      <td>{{ kanker.se_cekungan_kontur }}</td>
+                      <td>{{ kanker.se_jumlah_cekungan_kontur }}</td>
+                      <td>{{ kanker.se_fraktal_spesimen }}</td>
+                      <td>{{ kanker.keparahan_jari2_lobus }}</td>
+                      <td>{{ kanker.keparahan_tekstur_permukaan }}</td>
+                      <td>{{ kanker.keparahan_tumor_inti }}</td>
+                      <td>{{ kanker.keparahan_luas_lobus }}</td>
+                      <td>{{ kanker.keparahan_luas_permukaan_tumor }}</td>
+                      <td>{{ kanker.keparahan_cekungan_kontur }}</td>
+                      <td>{{ kanker.keparahan_jumlah_cekungan_kontur }}</td>
+                      <td>
+                          <a href="/edit/{{ kanker.id }}"><span class="btn btn-primary">Edit</span></a>
+                          <a href="/delete/{{ kanker.id }}"><span class="btn btn-danger"><i class="icon trash"> </i> Delete</span></a>
+                      </td>
+                    </tr>
+                  {% endfor %}
+                  </tbody>
+                </table>
+            <br /><br />
+            </div>
+          </div>
+         </div>
+       </div>
+     </div>
+  </div>
+ {% endblock content %}

@@ -1,0 +1,120 @@
+{% extends 'base.html' %}
+
+<!-- Page content -->
+<h3>Prediksi Penyakit Jantung</h3>
+{% block content %}
+<h1 class="container text-info" id="predict" ></h1>
+
+
+<div class="jumbotron">
+    <center>
+    <h4 > Aplikasi Prediksi Penyakit Jantung</h4>
+    <p class="lead">
+        Silahkan Inputkan data Anda !
+    </p>
+  </center>
+    <hr class="my-4">
+  </div>
+  
+  <!-- Container Form Prediksi-->
+    <div class="container">
+  
+    <form method="POST" action="result">
+      {% csrf_token %}
+      <div class="row">
+        <div class="col">
+          <p>Umur Anda :</p>
+          <input type="number" class="form-control" placeholder="Masukan Umur Anda" 
+          name="age" id="age" />
+        </div>
+        <div class="col">
+          <p>Jenis kelamin:</p>
+          <input type="number" class="form-control" placeholder="Masukan Jenis Kelamin" 
+          name="sex" id="sex" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p>Tipe Sakit Dada:</p>
+          <input type="number" class="form-control" placeholder="Masukan Tipe sakit dada anda" 
+          name="cp" id="cp" />
+        </div>
+        <div class="col">
+          <p>Tekanan Darah batas bawah :</p>
+          <input type="number" class="form-control" placeholder="Masukan Tekanan Darah Anda"  
+          name="trestbps" id="trestbps" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p>Kolesterol :</p>
+          <input type="number" class="form-control" placeholder="Masukan kadar Kolesterol Anda"  
+          name="chol"
+          id="chol" />
+        </div>
+        <div class="col">
+          <p>Gula Darah Puasa:</p>
+          <input type="number" class="form-control" placeholder="Masukan Rerata Jumlah Cekungan Kontur" 
+          name="fbs"
+          id="fbs" />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p>Hasil elektrokardiografi :</p>
+          <input type="number" class="form-control" placeholder="Masukan Hasil elektrokardiografi " 
+          name="restecg" id="restecg"/>
+        </div>
+        <div class="col">
+          <p>Maksimum denyut jantung :</p>
+          <input type="number" class="form-control" placeholder="Masukan Maksimum denyut jantung" 
+          name="thalach" id="thalach"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p>Latihan yang menginduksi nyeri dada : </p>
+          <input type="number" class="form-control" placeholder="Masukan "  
+          name="exang" id="exang"/>
+        </div>
+        <div class="col">
+          <p>Depresi yang diinduksi oleh latihan berat : </p>
+          <input type="number" class="form-control" placeholder="Masukan "  
+          name="oldpeak" id="oldpeak"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p>Kemiringan puncak ST segmen : </p>
+          <input type="number" class="form-control" placeholder="Masukan Kemiringan puncak ST segmen"  
+          name="slope" id="slope"/>
+        </div>
+        <div class="col">
+          <p>Jumlah Pembuluh darah utama :</p>
+          <input type="number" class="form-control" placeholder="Masukan Jumlah Pembuluh darah utama" 
+          name="ca" id="ca"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p>Tipe Kerusakan Pembuluh darah :</p>
+          <input type="number" class="form-control" placeholder="Masukan Tipe Kerusakan Pembuluh darah"  
+          name="thal" id="thal"/>
+        </div>
+        <div class="col">
+           <p>Target:</p>
+           <input type="number" class="form-control" placeholder="Masukan Tipe Kerusakan Pembuluh darah"  
+            name="target" id="target"/>
+        </div>
+      </div>
+      <center>
+      <br>
+      <br>
+      <input type="submit" value="Lakukan Prediksi" />
+      <br>
+      <br>
+      <br>
+      </center>
+{% endblock content %}
+</form>
+</div>
