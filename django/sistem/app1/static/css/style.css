@@ -1,0 +1,420 @@
+/* CSS untuk body */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  line-height: 0.6;
+  margin: 0;
+}
+
+/* CSS untuk header */
+header {
+  background-color: #29293D;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+}
+
+/* CSS untuk navigasi */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: slide-in 1s ease-out;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+nav li {
+  margin-left: 15px;
+}
+
+nav a {
+  color: #7c7c89;
+  font-size: 18px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #D1D1E0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  border-radius: 50px;
+}
+
+.navbtn {
+  display: inline-block;
+  background-color: #E60000;
+  color: #fff;
+  padding: 15px 25px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.navbtn:hover {
+  background-color: #a10909;
+}
+
+.navclr {
+  color: #fff;
+  font-size: 15px;
+}
+
+/* CSS untuk section */
+section {
+  background-color: #fff;
+  border: 1px solid #eee;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.05);
+  margin: 20px 0;
+  padding: 50px;
+}
+
+section h2 {
+  color: #333;
+  font-size: 28px;
+  margin-top: 0;
+}
+
+section p {
+  color: #555;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+section li {
+  margin-bottom: 20px;
+}
+
+.about {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.about h2 {
+  text-align: left;
+  font-size: 30px;
+  margin-right: 50px;
+  line-height: 1.5;
+}
+
+.about p {
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.about-image {
+  margin-left: 350px;
+}
+
+.about-image img {
+  width: 90%;
+  border-radius: 10px;
+}
+
+/* CSS untuk section login */
+.login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+/* CSS untuk section registrasi */
+.register-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 300px;
+}
+
+.card h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.card p {
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.card a {
+  text-align: center;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  background-color: #458FF6;
+  color: #fff;
+  padding: 15px 10px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  margin-top: 20px;
+  border-radius: 25px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #057ccb;
+}
+
+/* CSS untuk dashboard */
+.button2 {
+  display: block;
+  width: 180px;
+  background-color: #458FF6;
+  color: #fff;
+  padding: 15px 10px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  margin-top: 20px;
+  border-radius: 25px;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button2:hover {
+  background-color: #057ccb;
+}
+
+/* CSS untuk footer */
+footer {
+  background-color: #29293D;
+  color: #fff;
+  padding: 42px 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Media queries untuk perangkat mobile */
+@media screen and (max-width: 768px) {
+
+  /* Mengatur tata letak navigasi */
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    margin-top: 10px;
+  }
+
+  nav li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  /* Mengatur ukuran logo */
+  .logo img {
+    width: 40px;
+  }
+
+  /* Mengatur ukuran teks di header */
+  nav a {
+    font-size: 16px;
+  }
+
+  .navbtn {
+    padding: 10px 20px;
+    margin-top: 0;
+  }
+
+  /* Mengatur tata letak tentang section */
+  .about {
+    flex-direction: column;
+  }
+
+  .about h2 {
+    font-size: 24px;
+    margin-right: 0;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .about-image {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+
+/* Media queries untuk perangkat dengan lebar layar yang sangat kecil */
+@media screen and (max-width: 480px) {
+
+  /* Mengatur padding pada section */
+  section {
+    padding: 30px;
+  }
+
+  section h2 {
+    font-size: 24px;
+  }
+
+  section p {
+    font-size: 16px;
+  }
+
+  .about h2 {
+    font-size: 20px;
+  }
+
+  .about p {
+    font-size: 16px;
+  }
+
+  /* CSS untuk section diagnosa */
+  .register-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+  }
+
+  .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 300px;
+  }
+
+  .card h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .card p {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .card a {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="text"],
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  button {
+    display: block;
+    width: 100%;
+    background-color: #458FF6;
+    color: #fff;
+    padding: 15px 10px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    margin-top: 20px;
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #057ccb;
+  }
+
+  hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #ccc;
+  }
+
+
+}

@@ -103,26 +103,26 @@ body {
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-              <li class="nav-item" >
+              {% comment %} <li class="nav-item" >
                 <a class="nav-link {% if navbar == 'home' %} active {% endif %}" href="{% url 'home'%}" style="color:#ffffff">Home</a>
-              </li>
-              <li class="nav-item">
+              </li> {% endcomment %}
+              {% comment %} <li class="nav-item">
                 <a class="nav-link{% if navbar == 'login' %} active {% endif %}" href="{% url 'login'%}" style="color:#ffffff">Login</a>
-              </li>
+              </li> {% endcomment %}
               <li class="nav-item">
                 <a class="nav-link{% if navbar == 'predict' %} active {% endif %}" href="{% url 'predict'%}" style="color:#ffffff">Predict</a>
               </li>
              
-              <li class="nav-item">
+              {% comment %} <li class="nav-item">
                 <a class="nav-link{% if navbar == 'view' %} active {% endif %}" href="http://127.0.0.1:8000/view/" style="color:#ffffff"> Data </a>
               </li>
 
               <li class="nav-item">
                 <a class="nav-link{% if navbar == 'report' %} active {% endif %}" href="http://127.0.0.1:8000/report/" style="color:#ffffff"> Report </a>
-              </li>
+              </li> {% endcomment %}
             
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'logout'%}" style="color:#ffffff">Logout</a>
+                <a class="nav-link" href="{% url 'login'%}" style="color:#ffffff">Logout</a>
               </li>
       
 
@@ -145,7 +145,7 @@ body {
 <!-- ======= Footer ======= -->
 <footer class="bg-light text-center text-lg-start" id="footer" style="color:#ffffff;">
     <div class="text-center p-3" style="background-color: #140446">
-      Diagnosa Penyakit Gigi dan Mulut
+      Heart Disease Diagnose
         <a class="text-light" href="#" style="text-decoration: none;">
             <span {% block footer %} class="text-info" {% endblock footer %}></span>
         </a>
